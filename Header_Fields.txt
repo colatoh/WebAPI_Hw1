@@ -1,0 +1,61 @@
+REST Project 1
+Request Headers
+===================================================================
+GET https://www.googleapis.com/books/v1/volumes?q=turing HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: www.googleapis.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+===================================================================
+Accept-Encoding: List of acceptable encodings.
+Host: The domain name of the server (for virtual hosting),
+and the TCP port number on which the server is listening.
+The port number may be omitted if the port is the standard
+port for the service requested.
+Connection: Control options for the current connection and
+list of hop-by-hop request fields.
+User-Agent: The user agent string of the user agent
+===================================================================
+
+Response Headers
+===================================================================
+HTTP/1.1 200 OK
+Expires: Sun, 08 Feb 2015 19:34:35 GMT
+Date: Sun, 08 Feb 2015 19:34:35 GMT
+Cache-Control: private, max-age=0, must-revalidate, no-transform
+ETag: "_rmWcTkH-s1QFjg9mC3Xel0FZSQ/qrneHEyxH2DXvOgFF1bEWwxOjqM"
+Vary: Origin
+Vary: X-Origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 26982
+Server: GSE
+Alternate-Protocol: 443:quic,p=0.02
+====================================================================
+Expires: Gives the date/time after which the response is considered
+stale (in "HTTP-date" format as defined by RFC 7231.
+Date: The date and time that the message was sent (in "HTTP-date"
+format as defined by RFC 7231.
+Cache-Control: Tells all caching mechanisms from server to client
+whether they may cache this object. It is measured in seconds.
+ETag: An identifier for a specific version of a resource, often a
+message digest.
+Vary: Tells downstream proxies how to match future request headers
+to decide whether the cached response can be used rather than
+requesting a fresh one from the origin server.
+Content-Type: The MIME type of this content.
+X-Content-Type-Options: The only defined value, "nosniff", prevents
+Internet Explorer from MIME-sniffing a response away from
+the declared content-type. This also applies to Google Chrome,
+when downloading extensions.
+X-Frame-Options: Clickjacking protection: deny - no rendering within
+a frame, sameorigin - no rendering if origin mismatch, allow-from -
+allow from specified location, allowall - non-standard, allow from
+any location.
+X-XSS-Protection: Cross-site scripting (XSS) filter.
+Content-Length: The length of the response body in octets (8-bit bytes)
+Server: A name for the server.
+Alternate-Protocol: indicates that a server supports SPDY. Then on the
+second request the client will use SPDY instead of HTTP.
