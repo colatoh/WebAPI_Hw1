@@ -1,0 +1,50 @@
+Soap Project
+Request
+============================================================
+POST http://www.webservicex.net/geoipservice.asmx HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: "http://www.webservicex.net/GetGeoIP"
+Content-Length: 317
+Host: www.webservicex.net
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+=============================================================
+Accept-Encoding: List of acceptable encodings.
+Content-Type:The MIME type of the body of the request.
+Content-Length: The length of the request body in octets (8-bit bytes).
+Host: The domain name of the server (for virtual hosting),
+and the TCP port number on which the server is listening.
+The port number may be omitted if the port is the standard
+port for the service requested.
+Connection: Control options for the current connection and list of hop-by-hop request fields.
+User-Agent: The user agent string of the user agent.
+=============================================================================================
+
+Response
+============================================================
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Tue, 10 Feb 2015 18:08:45 GMT
+Content-Length: 403
+=============================================================
+
+Cache-Control: Tells all caching mechanisms from server to
+client whether they may cache this object. It is measured in seconds.
+Content-Type: The MIME type of this content.
+Content-Encoding: The type of encoding used on the data.
+Vary: Tells downstream proxies how to match future request
+headers to decide whether the cached response can be used rather
+than requesting a fresh one from the origin server.
+Server: A name for the server.
+X-AspNet-Version:  Specifies the version of ASP.NET being used.
+X-Powered-By: specifies the technology (e.g. ASP.NET, PHP, JBoss)
+supporting the web application.
+Date: The date and time that the message was sent.
+Content-Length: The length of the response body in octets (8-bit bytes).
